@@ -1,0 +1,8 @@
+models/__pycache__/*
+*.pth
+*.PNG
+*.log
+*.pyc
+checkpoints/*
+data/*
+notebooks/.ipynb_checkpoints/*
