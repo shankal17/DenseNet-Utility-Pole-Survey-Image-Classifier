@@ -52,7 +52,7 @@ As can be seen, the loss reaches near-zero values. For this portion of the proje
 
 ### Training and Hyperparameter Tuning
 
-Now it is time to squeeze every bit of performance out of the chosen architecture. There are various parameters that will have to be chosen in order to achieve the best configuration, which are called hyperparameters. To find a near-optimal permutation of hyperparameters, multiple models are trained with different hyperparameters and the best performing model is chosen. The random search algorithm is used and is implemented using [Ray Tune](https://docs.ray.io/en/master/tune/index.html) library. Only batch size and learning rate are treated as hyperparameters and the search space is configured as seen in the code below.
+Now it is time to squeeze every bit of performance out of the chosen architecture. There are various parameters that will have to be chosen in order to achieve the best configuration, which are called hyperparameters. To find a near-optimal permutation of hyperparameters, multiple models are trained with different hyperparameters and the best performing model is chosen. The random search algorithm is used and is implemented using [Ray Tune](https://docs.ray.io/en/master/tune/index.html) library. Only batch size and learning rate are treated as hyperparameters and the search space is configured as seen in the code below and found [here](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/tune.py#:~:text=config%20%3D%20%7B,%7D).
 
 ```py
 # Define hyperparameter search space
@@ -84,7 +84,7 @@ Once you have the code, set up a virtual environment if you would like and insta
 pip install -r /path/to/requirements.txt
 ```
 ### Training
-All that needs to be done to train/tune the model is to run the [tune.py](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/tune.py) model, changing the appropriate directory paths and configurations. Changing the search space is as simple as changing the numbers in the code block below, except in [tune.py](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/tune.py).
+All that needs to be done to train/tune the model is to run the [tune.py](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/tune.py) model, changing the appropriate directory paths and configurations. Changing the search space is as simple as changing the numbers in the code block below, also found [here](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/tune.py#:~:text=config%20%3D%20%7B,%7D).
 
 ```py
 # Define hyperparameter search space
@@ -95,7 +95,7 @@ config = {
 ```
 
 ### Evaluation
-Once a model is trained, just run the [evaluate.py](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/evaluate.py) module, being sure to change the appropriate lines in the code block below, except in [evaluate.py](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/evaluate.py).
+Once a model is trained, just run the [evaluate.py](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/evaluate.py) module, being sure to change the appropriate lines in the code block below, found [here](https://github.com/shankal17/DenseNet-Utility-Pole-Survey-Image-Classifier/blob/main/evaluate.py#:~:text=if%20__name__%20%3D%3D%20%27__main__,classes%2C%20data_dir%3Ddata_dir).
 
 ```py
 if __name__ == '__main__':
