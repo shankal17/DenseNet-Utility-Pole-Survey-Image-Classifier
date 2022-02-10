@@ -1,7 +1,7 @@
 # Utility Pole Survey Image Classifier
 
 ## TL;DR
-This project implements a Deep Convolutional Neural Network (DCNN) to classify utility pole survey images. An overall accuracy of over 96% was achieved on a test dataset. I worked on this project driven by my own interest and on my own time.
+This project implements a Deep Convolutional Neural Network (DCNN) to classify utility pole survey images. An overall accuracy of over 96% was achieved on a test dataset.
 
 ## Contents
 1. [Report](#Report)
